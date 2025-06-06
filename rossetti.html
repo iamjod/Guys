@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rossetti | Guys</title>
+    <link rel="stylesheet" href="rossetti-style.css">
+</head>
+
+<body class="rossetti-theme">
+
+    <div class="container">
+        <h1>Rossetti</h1>
+        <p id="public-msg">The newest member of our gc, formally known as Rossetti is the most unique girl I've seen
+            in a while,<br> she does crazy roasts and we vibe.<br> I need to talk to her more to figure out more stuff
+            about her
+        </p>
+
+        <button class="bubble" id="secretBtn">Secret Msg 🔐</button>
+
+        <!-- ✅ Modal for Secret Code -->
+        <div id="codeModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Enter Secret Code</h3>
+                <input type="text" id="codeInput" placeholder="Enter code">
+                <button id="checkCode">Submit</button>
+                <p id="error" class="hidden error">Incorrect code. Try again.</p>
+                <p id="privateMessage" class="hidden">The secret msg for you is don't use n-word in gc, it's the most
+                    innocent gc you'll ever see, none here curse, except me bcs I'm cool, Warning count-1, further warns
+                    may result in mute or ban</p>
+            </div>
+        </div>
+
+        <button onclick="location.href='index.html'">← Go Back to Home</button>
+    </div>
+
+    <script src="rossetti.js"></script>
+</body>
+
+</html>

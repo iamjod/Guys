@@ -1,0 +1,123 @@
+body.zira-theme {
+    background: linear-gradient(120deg, #ffe3ec, #d8ffe7);
+    /* pastel pink to mint */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+#public-msg {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+button,
+.zira-btn {
+    background: linear-gradient(135deg, #ffc1cc, #b0f2c2);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    color: #333;
+}
+
+button:hover,
+.zira-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
+}
+
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#secret-msg {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: #d8000c;
+    margin-top: 10px;
+}
+
+.home-link {
+    display: block;
+    margin-top: 30px;
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Bubble hover effect */
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bubble {
+    animation: bubble 2s infinite;
+}

@@ -1,0 +1,146 @@
+/* cosmic-v2-style.css */
+body.cosmic-theme {
+    background: linear-gradient(135deg, #0c0c0f, #1a0b0b, #300a0a);
+    font-family: 'Poppins', sans-serif;
+    color: #e66464;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+
+
+h1 {
+    font-size: 3em;
+    color: #f08080;
+    text-shadow:
+        0 0 8px #f08080,
+        0 0 15px #e85c5c;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+#public-msg {
+    font-size: 1.3em;
+    color: #f4a1a1;
+    margin-bottom: 35px;
+}
+
+input[type="text"] {
+    padding: 12px 16px;
+    border: 2px solid rgba(230, 100, 100, 0.4);
+    border-radius: 20px;
+    background-color: rgba(20, 10, 10, 0.7);
+    color: #f2a0a0;
+    font-size: 16px;
+    width: 80%;
+    max-width: 320px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #f08080;
+    background-color: rgba(40, 15, 15, 0.9);
+    outline: none;
+}
+
+button {
+    background: linear-gradient(145deg, #c05050, #a53333);
+    color: #fff0f0;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 32px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.3s ease;
+    margin-top: 10px;
+    box-shadow:
+        0 0 12px 3px rgba(192, 50, 50, 0.7),
+        inset 0 0 10px 3px rgba(255, 120, 120, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(145deg, #d06e6e, #b54343);
+    transform: scale(1.1);
+    box-shadow:
+        0 0 18px 5px rgba(240, 80, 80, 0.9),
+        inset 0 0 15px 6px rgba(255, 140, 140, 0.6);
+}
+
+#secret-msg,
+#privateMessage {
+    margin-top: 22px;
+    padding: 18px;
+    background-color: rgba(230, 100, 100, 0.12);
+    border-radius: 18px;
+    color: #f6bebe;
+    font-style: italic;
+    box-shadow: 0 0 15px 6px rgba(230, 100, 100, 0.4);
+}
+
+
+#error {
+    color: #ff9999;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(10, 5, 5, 0.95);
+}
+
+.modal-content {
+    background-color: rgba(40, 15, 15, 0.95);
+    color: #f4a1a1;
+    margin: 12% auto;
+    padding: 28px 25px;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow:
+        0 0 35px 10px rgba(230, 100, 100, 0.6);
+}
+
+.close-button {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    color: #e06e6e;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #ffbaba;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bubble {
+    animation: bubble 2s infinite;
+}

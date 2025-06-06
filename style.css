@@ -1,0 +1,73 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Quicksand', sans-serif;
+     background: linear-gradient(to right top, #ffe4ec, #d0f0ff);
+     color: #333;
+     text-align: center;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ h1 {
+     font-size: 2.8em;
+     margin-bottom: 30px;
+     color: #ff69b4;
+     text-shadow: 1px 1px #ffaad4;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+     gap: 20px;
+     padding: 0 25px;
+     max-width: 950px;
+     margin: auto;
+ }
+
+ .card {
+     background: #ffffffcc;
+     border: 2px dashed #ffbfd7;
+     border-radius: 25px;
+     padding: 20px;
+     color: #444;
+     text-decoration: none;
+     box-shadow: 3px 3px 10px rgba(255, 128, 171, 0.2);
+     transition: transform 0.3s ease;
+     animation: bounceIn 0.6s ease;
+ }
+
+ .card:hover {
+     transform: scale(1.07) rotate(-1deg);
+     box-shadow: 4px 4px 12px rgba(255, 105, 180, 0.3);
+ }
+
+ .card h2 {
+     font-size: 1.3em;
+     margin: 0;
+     color: #ff4081;
+ }
+
+ @keyframes bounceIn {
+     0% {
+         transform: scale(0.9);
+         opacity: 0;
+     }
+
+     100% {
+         transform: scale(1);
+         opacity: 1;
+     }
+ }
+
+ @media (max-width: 500px) {
+     h1 {
+         font-size: 2em;
+     }
+
+     .card h2 {
+         font-size: 1.1em;
+     }
+ }

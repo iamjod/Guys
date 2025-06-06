@@ -1,0 +1,129 @@
+/* furqan-style.css */
+body.furqan-theme {
+    background: linear-gradient(135deg, #a78bfa, #6ee7b7, #064e3b);
+    /* violet to mint green to dark green */
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    transition: background 0.5s ease;
+}
+
+
+h1 {
+    font-size: 2.8em;
+    color: #cbbcff;
+    /* soft violet */
+    text-shadow: 1px 1px 6px rgba(75, 55, 110, 0.6);
+    /* subtle purple shadow */
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+#public-msg {
+    font-size: 1.2em;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #bbf7d0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #064e3b;
+    font-size: 15px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #34d399;
+    /* minty green */
+    color: #1f2937;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #059669;
+    /* deeper green on hover */
+    transform: scale(1.05);
+    color: #f0fdf4;
+}
+
+#secret-msg,
+#privateMessage {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(236, 253, 245, 0.4);
+    border-radius: 10px;
+    color: #14532d;
+    font-style: italic;
+}
+
+#error {
+    color: #f87171;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #064e3b;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 14px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #14532d;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bubble {
+    animation: bubble 2s infinite;
+}

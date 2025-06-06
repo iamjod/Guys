@@ -1,0 +1,127 @@
+body.avii-theme {
+    background: linear-gradient(to right, #ffe0c3, #fabbbb, #f9a9a9);
+    font-family: 'Poppins', sans-serif;
+    color: #5c1a1a;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+
+
+h1 {
+    font-size: 3em;
+    color: #d94f4f;
+    text-shadow: 0 0 10px #ffc4c4;
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
+}
+
+#public-msg {
+    font-size: 1.3em;
+    color: #a84848;
+    margin-bottom: 35px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid #f48f8f;
+    border-radius: 14px;
+    background-color: #fff0ec;
+    color: #aa3e3e;
+    font-size: 16px;
+    width: 80%;
+    max-width: 320px;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus {
+    border-color: #ff9f9f;
+    outline: none;
+}
+
+button {
+    background-color: #ff7b7b;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 14px 32px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px #fca7a7;
+}
+
+button:hover {
+    background-color: #ff6161;
+    transform: scale(1.07);
+}
+
+#secret-msg,
+#privateMessage {
+    margin-top: 22px;
+    padding: 18px;
+    background-color: rgba(255, 165, 165, 0.2);
+    border-radius: 18px;
+    color: #8c2222;
+    font-style: italic;
+}
+
+#error {
+    color: #c0392b;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 204, 204, 0.95);
+}
+
+.modal-content {
+    background-color: #fff0f0;
+    color: #b03030;
+    margin: 12% auto;
+    padding: 28px 25px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 0 30px 8px rgba(255, 155, 155, 0.6);
+}
+
+.close-button {
+    float: right;
+    font-size: 26px;
+    cursor: pointer;
+    color: #ff6f6f;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bubble {
+    animation: bubble 2s infinite;
+}
