@@ -9,7 +9,7 @@ document.querySelector(".close-button").addEventListener("click", function () {
 
 document.getElementById("checkCode").addEventListener("click", function () {
     const input = document.getElementById("codeInput").value.trim();
-    const correctCode = "1"; 
+    const correctCode = "strawberry"; 
 
     if (input === correctCode) {
         document.getElementById("privateMessage").classList.remove("hidden");
