@@ -1,23 +1,26 @@
 document.getElementById("secretBtn").addEventListener("click", function () {
-  document.getElementById("codeModal").classList.remove("hidden");
+    document.getElementById("codeModal").style.display = "block";
 });
 
 document.querySelector(".close-button").addEventListener("click", function () {
-  document.getElementById("codeModal").classList.add("hidden");
-  document.getElementById("codeInput").value = "";
-  document.getElementById("privateMessage").classList.add("hidden");
-  document.getElementById("error").classList.add("hidden");
+    document.getElementById("codeModal").style.display = "none";
+    resetModal();
 });
 
 document.getElementById("checkCode").addEventListener("click", function () {
-  const code = document.getElementById("codeInput").value.trim();
-  const correctCode = "slay gurl";
+    const input = document.getElementById("codeInput").value.trim();
+    const correctCode = "slay gurl"; // replace with your real code
 
-  if (code === correctCode) {
-    document.getElementById("privateMessage").classList.remove("hidden");
-    document.getElementById("error").classList.add("hidden");
-  } else {
-    document.getElementById("privateMessage").classList.add("hidden");
-    document.getElementById("error").classList.remove("hidden");
-  }
+    if (input === correctCode) {
+        document.getElementById("privateMessage").classList.remove("hidden");
+        document.getElementById("error").classList.add("hidden");
+    } else {
+        document.getElementById("error").classList.remove("hidden");
+    }
 });
+
+function resetModal() {
+    document.getElementById("codeInput").value = "";
+    document.getElementById("privateMessage").classList.add("hidden");
+    document.getElementById("error").classList.add("hidden");
+}
