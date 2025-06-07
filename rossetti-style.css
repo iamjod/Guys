@@ -57,7 +57,6 @@ button:hover {
     padding: 15px;
     background-color: rgba(250, 240, 255, 0.4);
     border-radius: 10px;
-    display: none;
     color: #4f2e6e;
     font-style: italic;
 }
